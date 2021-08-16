@@ -118,3 +118,24 @@ body, html {
   color: white;
   text-align: center;
 }
+
+/* tamanho da barra */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* fundo da barra */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* traço da barra */
+::-webkit-scrollbar-thumb {
+  background: #303030;
+  border-radius: 10px;
+}
+
+/* traço da barra ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
