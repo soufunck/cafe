@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<head>
+
+  <!-- meta -->
+  <meta name="description" content="Beba café">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- estilos -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <!-- icone -->
+  <link 
+  rel="icon" type="image/png" sizes="200x200" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Font_Awesome_5_solid_coffee.svg/1200px-Font_Awesome_5_solid_coffee.svg.png">
+
+
+  <!-- fontes -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&amp;display=swap" rel="stylesheet">
+
+  <!-- scripts -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <!-- titulo -->
+  <title>Cafe</title>
+</head>
+
+<body>
+
+  <!-- header do site -->
+  <section class="banner-container container-fluid">
+    <div class="row vh-100">
+      <div class="col-md-9 banner-column m-auto text-center text-white p-4">
+        <h1 class="display-4 font-weight-bolder" style="color:brown;font-weight:600;"><i class="fa fa-coffee"></i> Café
+        </h1>
+        <h3 class="texto m-auto" style="color:rgb(109, 49, 49);font-weight: 600;">Website para louvar o café</h3>
+          <div class="icon-arrow">
+            <span></span>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- botoes da barra -->
+  <button class="tab" onclick="openPage('primeiro', this, 'brown')" id="principal">Motivos</button>
+  <button class="tab" onclick="openPage('segundo', this, 'rgb(124, 32, 32)')">Sabor</button>
+  <button class="tab" onclick="openPage('terceiro', this, 'rgb(73, 19, 19)')">Cor</button>
+  <button class="tab" onclick="openPage('quarto', this, 'rgb(43, 11, 11)')">Temperatura</button>
+
+  <!-- primeiro botao -->
+  <div id="primeiro" class="tabcontent">
+    <h3 style="color: white;font-family:'Sofia', sans-serif;font-size:30px;text-align:center;text-shadow: 2px 2px 2px black;">
+      Por que eu tenho que beber café?
+    </h3>
+    <p style="color:#d6d6d6;font-family:DejaVu Sans Mono, monospace;text-align:center;">
+      O café, além de ser delicioso, faz muito bem para a saúde. O café pode ser um aliado na luta contra doenças como câncer, Alzheimer, depressão, estresse e diabetes. Além disso, essa deliciosa bebida ajuda na digestão e até rejuvenesce as células do corpo. Não há problema algum em beber café todo dia; MITO total. As xícaras de café repetidas podem acentuar, sim, alguns desgastes físicos para quem já apresenta um problema de saúde.
+    </p>
+  </div>
+
+  <!-- segundo botao -->
+  <div id="segundo" class="tabcontent">
+    <h3 style="color: white;font-family:'Sofia', sans-serif;font-size:30px;text-align:center;text-shadow: 2px 2px 2px black;">
+      Você sabe o real sabor do café?
+    </h3>
+    <p style="color:#d6d6d6;font-family:DejaVu Sans Mono, monospace;text-align:center;">
+      Café é uma iguaria com mais de 400 anos! Desde 1616, tem o seu sabor que contagia todos os seres vivos do planeta. Não tem como explicar o sabor, só provando para entender
+      o que é falado. Podemos igualar como algo divino; Criação de Deus. Aqueles que "provram" café, e dizem não gostar, tem a alma corrompida. Já não sentem mais nada além de sofrimento.
+    </p>
+  </div>
+
+  <!-- terceiro botao -->
+  <div id="terceiro" class="tabcontent">
+    <h3 style="color: white;font-family:'Sofia', sans-serif;font-size:30px;text-align:center;text-shadow: 2px 2px 2px black;">
+      Já reparou na coloração do café?
+    </h3>
+    <p style="color:#d6d6d6;font-family:DejaVu Sans Mono, monospace;text-align:center;">
+      No caso do café, quando preparamos a bebida, sua cor é resultado dos pigmentos que se dissolvem na água durante a extração – daí a paleta de cores que vai desde um marrom claro ao definitivamente preto, determinadas pelo processo de torra e seu ponto de finalização.
+    </p>
+    
+  </div>
+
+  <!-- quarto botao -->
+  <div id="quarto" class="tabcontent">
+    <h3 style="color: white;font-family:'Sofia', sans-serif;font-size:30px;text-align:center;text-shadow: 2px 2px 2px black;">
+      Qual é o ponto da água do café?
+    </h3>
+    <p style="color:#d6d6d6;font-family:DejaVu Sans Mono, monospace;text-align:center;">  
+      A água tem que estar sim muito quente; porém, o ponto “certo” está entre 92º e 96º C. Isso garante que todas as substâncias e nuances do café passe para a bebida. Uma água “fria” não permitiria a extração de alguns compostos, resultando numa bebida desequilibrada.
+    </p>
+  </div>
+
+
+  <!-- footer do site -->
+  <div class="footer">
+    <p>
+      Durante a criação, utilizamos café como energia!
+    </p>
+  </div>
+
+  <!-- arquivo javascript -->
+  <script src="script.js"></script>
+
+</body>
