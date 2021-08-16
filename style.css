@@ -1,0 +1,120 @@
+* {box-sizing: border-box}
+
+/* base do site */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* header do site */
+.banner-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.589), rgb(20, 5, 5)),
+    url(https://unicardio.com.br/wp-content/uploads/2019/01/cafe-faz-mal-a-saude-do-coracao.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* texto header */
+.texto {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 992px) {
+  .texto {
+    font-size: 1.2em;
+  }
+}
+
+/* tabs do site */
+.tab { 
+  background-color: #181818;
+  color: rgb(255, 255, 255);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tab:hover {
+  background-color: #212121;
+}
+
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
+/* botoes do site */
+#primeiro {background-color: brown;}
+#segundo {background-color: rgb(124, 32, 32);}
+#terceiro {background-color: rgb(73, 19, 19);}
+#quarto {background-color: rgb(43, 11, 11);}
+
+/* icone de scroll */
+.icon-arrow {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+  width: 1em;
+	height: 3.125em;
+	transform: translateX(-50%) scale(2);
+	z-index: 99999;
+}
+
+.icon-arrow::after,
+.icon-arrow::before {
+  content: '';
+}
+.icon-arrow span,
+.icon-arrow::after,
+.icon-arrow::before {
+	display: block;
+	width: 0.315em;
+	height: 0.315em;
+	border-right: 1px solid rgba(255,255,255,.8);
+	border-bottom: 1px solid rgba(255,255,255,.8);
+	margin: 0 0 0.125em 0.315em;
+	transform: rotate(45deg);
+  animation: efeito-scroll 1s infinite;
+	animation-direction: alternate;
+}
+
+.icon-arrow::before {
+	margin-top: 0.315em;
+	animation-delay: .1s;
+}
+
+.icon-arrows::after {
+	animation-delay: .3s;
+}
+
+/* efeito no icone de scroll */
+@keyframes efeito-scroll {
+	0%   { opacity: 0; }
+	50%  { opacity: .5; }
+	100% { opacity: 1; }
+}
+
+/* footer do site */
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+
+  background-color: #151515;
+  color: white;
+  text-align: center;
+}
